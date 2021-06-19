@@ -1,0 +1,21 @@
+
+<template>
+    <div class="slds-container_fluid slds-theme_default">
+        <div class=" slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-1">
+                 <h3 class="slds-text-heading_medium slds-var-m-bottom_medium">Please Draw below</h3>
+
+                <div class="slds-var-m-bottom_small"> 
+                    <canvas width="500" height="250" class="canvas" id="canvas" name="canvasItem"></canvas>
+                </div>
+                <p class="slds-var-m-bottom_small"> 
+                <lightning-button variant="brand" label="Submit Image" title="Submit Image" 
+                    onclick={handleSaveClick} class="slds-var-m-left_x-small"></lightning-button>
+                
+                <lightning-button label="Clear" title="Clear" 
+                    onclick={handleClearClick} class="slds-var-m-left_x-small"></lightning-button>
+                </p>
+            </div>
+        </div>
+    </div>
+</template>
